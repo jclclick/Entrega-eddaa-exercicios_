@@ -32,6 +32,14 @@ impl Editor {
 fn main() {}
 
 # Complexidade
-enqueue = O(1)
+digitar = O(n)
 
-dequeue = O(1)
+desfazer = O(1)
+
+refazer = O(1)
+
+Para implementar o mecanismo de desfazer e refazer foram utilizadas duas pilhas, armazenando estados anteriores do texto.
+
+As operações de empilhar e desempilhar estados possuem custo constante. Entretanto, para salvar um novo estado é necessário copiar o conteúdo atual do texto. Dessa forma, o custo da operação de digitação depende do tamanho da string armazenada.
+
+Por esse motivo, a operação de digitar possui complexidade O(n), enquanto desfazer e refazer possuem complexidade O(1)

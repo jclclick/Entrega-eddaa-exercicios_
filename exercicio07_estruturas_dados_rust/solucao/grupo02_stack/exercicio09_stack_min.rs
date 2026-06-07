@@ -37,3 +37,8 @@ push = O(1)
 pop = O(1)
 
 min = O(1)
+Para permitir a consulta do menor elemento em tempo constante, utilizei uma pilha auxiliar que acompanha os menores valores já inseridos.
+
+Dessa forma, não é necessário percorrer toda a pilha para descobrir o menor elemento. Basta consultar o topo da pilha auxiliar.
+
+Com essa estratégia, as operações push(), pop() e min() possuem complexidade O(1).
